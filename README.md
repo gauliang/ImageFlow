@@ -2,6 +2,8 @@
 ImageFlow —— 可以根据图片长宽比自动确定跨行或跨列布局的图片流组件，支持响应式页面设计。
 ImageFlow 依赖于 jQuery，但其本身并不是 jQuery 插件。
 
+![Preview](https://github.com/kelsengao/ImageFlow/raw/master/example/data/Example%20-%20ImageFlow.jpg)
+
 ## Description
 ```
 ImageFlow.create('#srouce'[,options]);

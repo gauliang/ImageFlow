@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Example - ImageFlow</title>
+	<link rel="stylesheet" href="../reset.css">
+	<link rel="stylesheet" href="../image-flow.css">
+</head>
+<body>
+
+<div class="container m-t-lg">
+	<div class="box-title">
+		<h2>
+			<a href="#">ImageFlow - A</a>
+			<small>Image Flow A</small>
+		</h2>
+		<ul>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+		</ul>
+	</div>
+	
+	<div id="srouce" class="image-flow m-t-md">
+		<div class="hidden">
+			<div class="col" data-link="url" src="data/01.jpg" data-title="正常1" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/05.jpg" data-title="跨列13" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/03.jpg" data-title="正常16" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/05.jpg" data-title="跨列13" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/06.jpg" data-title="跨列15" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/09.jpg" data-title="跨列7" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/02.jpg" data-title="跨列2" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/04.jpg" data-title="正常12" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/04.jpg" data-title="正常12" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/09.jpg" data-title="跨列7" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/01.jpg" data-title="正常1" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/02.jpg" data-title="跨列2" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/03.jpg" data-title="正常16" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/06.jpg" data-title="跨列15" data-desc="描述" data-author="author"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container m-t-md">
+	<div class="box-title">
+		<h2>
+			<a href="#">ImageFlow - B</a>
+			<small>Image Flow B</small>
+		</h2>
+		<ul>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+			<li><a href="">TAG</a></li>
+		</ul>
+	</div>
+
+	<div id="srouce-2" class="image-flow m-t-md">
+		<div class="hidden">
+			<div class="col" data-link="url" src="data/01.jpg" data-title="正常1" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/05.jpg" data-title="跨列13" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/09.jpg" data-title="跨列7" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/02.jpg" data-title="跨列2" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/04.jpg" data-title="正常12" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/04.jpg" data-title="正常12" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/09.jpg" data-title="跨列7" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/01.jpg" data-title="正常1" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/03.jpg" data-title="正常16" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/05.jpg" data-title="跨列13" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/06.jpg" data-title="跨列15" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/02.jpg" data-title="跨列2" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/03.jpg" data-title="正常16" data-desc="描述" data-author="author"></div>
+			<div class="col" data-link="url" src="data/06.jpg" data-title="跨列15" data-desc="描述" data-author="author"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="text-center m-t-lg">
+	<div class="container">
+		<hr>
+		<small>Fedis 1.2.0 · Created by <a target="_blank" href="https://github.com/kelsengao/ImageFlow">Gau Liang</a></small>
+	</div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.8.0/jquery-1.8.0.js"></script>
+<script src="../image-flow.min.js"></script>
+<script>	
+	var flowConfig = {scale: "16:9"}
+	ImageFlow.create('#srouce', flowConfig);
+	ImageFlow.create('#srouce-2', flowConfig);
+</script>
+</body>
+</html>
+
+
+

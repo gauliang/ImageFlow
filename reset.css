@@ -1,0 +1,169 @@
+/* 重置元素样式 */
+html { font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #333; }
+
+html, body { margin: 0; }
+
+img, a { border: none; }
+
+a { text-decoration: none; color: #37B; }
+
+a:hover { color: #F55; }
+
+::selection { background: #FFA; color: #333; text-shadow: none; }
+
+code { color: #A00; background: #FEE; padding: 2px 5px; line-height: 1em; margin: 0 3px; display: inline-block; font-family: Consolas, Monaco, 'Andale Mono', monospace; }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.6em; margin: 0.5em 0; font-weight: normal; }
+
+h1 { font-size: 38px; }
+
+h2 { font-size: 26px; }
+
+h3 { font-size: 20px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+
+hr { border-top-width: 0; border-left-width: 0; border-right-width: 0; border-bottom-width: 1px; border-color: #ddd; }
+/* 段落 */
+p { line-height: 1.8em; margin: 1em 0 1.5em 0; }
+
+sub, sup { font-size: 12px; }
+
+small { font-size: 70%; color: #777777; }
+
+/* 列表 */
+ul, ol { margin: 1em 0; padding-left: 1.5em; }
+
+ul li, ol li { line-height: 1.8em; }
+
+.list-unstyled { list-style: none; padding: 0; }
+
+/* 描述列表 */
+dl, dl.dl-horizontal { margin: 1em 0; line-height: 1.8em; }
+
+dl dt, dl.dl-horizontal dt { font-weight: bold; }
+
+dl dd, dl.dl-horizontal dd { margin: 0; }
+
+dl.dl-horizontal dt { width: 160px; float: left; }
+
+dl.dl-horizontal dd { padding-left: 190px; }
+
+/* 图片 */
+img { max-width: 100%; height: auto; border: none; box-sizing: border-box; }
+
+img.img-rounded { border-radius: 1em; }
+
+img.img-circle { border-radius: 50%; }
+
+img.img-thumbnail { border: 1px solid #ddd; padding: 5px; background: #FFF; }
+
+img.img-preserve { max-width: auto; }
+
+/* 布局 通过 10|12 等分，实现 1、2、3、4、5、6 的公倍数栅格 间隔 30px */
+.container { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; box-sizing: border-box; }
+
+@media (min-width: 768px) { .container { width: 738px; } }
+
+@media (min-width: 960px) { .container { width: 930px; } }
+
+@media (min-width: 1200px) { .container { width: 1170px; } }
+
+@media (min-width: 1630px) { .container { width: 1600px; } }
+
+/* 文本工具类 */
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.text-indent { text-indent: 2em; }
+/* 内外边距 */
+.m-t { margin-top: 15px !important; }
+
+.m-t-xs { margin-top: 10px !important; }
+
+.m-t-sm { margin-top: 20px !important; }
+
+.m-t-md { margin-top: 30px !important; }
+
+.m-t-lg { margin-top: 45px !important; }
+
+.m-r { margin-right: 15px !important; }
+
+.m-r-xs { margin-right: 10px !important; }
+
+.m-r-sm { margin-right: 20px !important; }
+
+.m-r-md { margin-right: 30px !important; }
+
+.m-r-lg { margin-right: 45px !important; }
+
+.m-b { margin-bottom: 15px !important; }
+
+.m-b-xs { margin-bottom: 10px !important; }
+
+.m-b-sm { margin-bottom: 20px !important; }
+
+.m-b-md { margin-bottom: 30px !important; }
+
+.m-b-lg { margin-bottom: 45px !important; }
+
+.m-l { margin-left: 15px !important; }
+
+.m-l-xs { margin-left: 10px !important; }
+
+.m-l-sm { margin-left: 20px !important; }
+
+.m-l-md { margin-left: 30px !important; }
+
+.m-l-lg { margin-left: 45px !important; }
+
+.m-n { margin: 0 !important; }
+
+.p-t { padding-top: 15px !important; }
+
+.p-t-xs { padding-top: 10px !important; }
+
+.p-t-sm { padding-top: 20px !important; }
+
+.p-t-md { padding-top: 30px !important; }
+
+.p-t-lg { padding-top: 45px !important; }
+
+.p-r { padding-right: 15px !important; }
+
+.p-r-xs { padding-right: 10px !important; }
+
+.p-r-sm { padding-right: 20px !important; }
+
+.p-r-md { padding-right: 30px !important; }
+
+.p-r-lg { padding-right: 45px !important; }
+
+.p-b { padding-bottom: 15px !important; }
+
+.p-b-xs { padding-bottom: 10px !important; }
+
+.p-b-sm { padding-bottom: 20px !important; }
+
+.p-b-md { padding-bottom: 30px !important; }
+
+.p-b-lg { padding-bottom: 45px !important; }
+
+.p-l { padding-left: 15px !important; }
+
+.p-l-xs { padding-left: 10px !important; }
+
+.p-l-sm { padding-left: 20px !important; }
+
+.p-l-md { padding-left: 30px !important; }
+
+.p-l-lg { padding-left: 45px !important; }
+
+.p-n { padding: 0 !important; }

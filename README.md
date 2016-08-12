@@ -136,3 +136,9 @@ ImageFlow.create('#srouce'[,options]);
 <script>
 <!--/body-->
 ```
+
+## LICENSE
+
+The MIT License (MIT)
+
+Copyright (c) 2016 GauLiang(https://github.com/kelsengao/)

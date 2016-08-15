@@ -89,7 +89,12 @@
 <script src="http://cdn.bootcss.com/jquery/1.8.0/jquery-1.8.0.js"></script>
 <script src="../image-flow.min.js"></script>
 <script>	
-	var flowConfig = {scale: "16:9"}
+	var flowConfig = {
+		scale: "16:9",
+		grid : {
+			hg:{row:3,col:6}
+		}
+	}
 	ImageFlow.create('#srouce', flowConfig);
 	ImageFlow.create('#srouce-2', flowConfig);
 </script>

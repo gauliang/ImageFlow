@@ -1,6 +1,6 @@
 /**
  * ImageFlow 瀑布流
- * version : 1.0.0
+ * version : 1.2.0
  */
 +function(Core){
 	if (!window.jQuery) {
@@ -58,7 +58,9 @@
 
 		var that = this;
 
-		$.extend(this.options, opts);
+		this.extend(this.options, opts);
+
+		console.log(this.options)
 
 		this.data.row = this.options.grid[this.scrrenType()].row;
 		this.data.col = this.options.grid[this.scrrenType()].col;
@@ -153,6 +155,18 @@
 				this.data.articlesTemp[i].index = i;
 				if(this.insertElement(this.data.articlesTemp[i]) >= this.data.col){
 					return ;
+				}
+			}
+		}
+	}
+
+	Core.prototype.extend = function(target, source){
+		for (var key in source) {
+			if (source.hasOwnProperty(key)) {
+				if(typeof source[key] == "object"){
+					this.extend(target[key], source[key])
+				}else{
+					target[key] = source[key];
 				}
 			}
 		}
